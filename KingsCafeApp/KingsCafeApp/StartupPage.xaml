@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KingsCafeApp.StartupPage"
+            
+           BackgroundColor="#ff914d"
+             >
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="24">
+            <Image Source="ic_kc_gen_white"/>
+            <Label FontSize="48" TextColor="AntiqueWhite" HorizontalTextAlignment="Center" Text="King's Cafe" FontFamily="Arial"  />
+            <Label FontSize="18" TextColor="AntiqueWhite" HorizontalTextAlignment="Center" Text="Taste Ka Bhndaar" Margin="0,0,0,150" />
+            
+            <Label/>
+            <Label/>
+            <Label/>
+            
+            <Button Text="Get Started"   BorderWidth="4" CornerRadius="20" x:Name="GetStarted" Clicked="GetStarted_Clicked" BackgroundColor="AntiqueWhite"  TextColor="Black"/>
+
+            <StackLayout Orientation="Horizontal" Padding="28">
+                <Label Text="Admin"  TextColor="AntiqueWhite">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+                        </TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text=" | " TextColor="AntiqueWhite"/>
+
+                <Label Text="Worker"  TextColor="AntiqueWhite">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+                        </TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text=" | " TextColor="AntiqueWhite"/>
+
+                <Label Text="Rider" TextColor="AntiqueWhite">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+                        </TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text=" | " TextColor="AntiqueWhite"/>
+
+                <Label Text="Reset Defaults" TextColor="AntiqueWhite">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+                        </TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+                
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
